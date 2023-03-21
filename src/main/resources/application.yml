@@ -1,0 +1,19 @@
+# logging ?? ??
+logging:
+  level:
+    root: INFO
+    sql: ERROR
+# Overloaded POST ??
+spring:
+  mvc:
+    hidden-method:
+      filter:
+        enabled: true
+  h2:
+    console:
+      enabled: true
+# session
+server:
+  servlet:
+    session:
+      timeout: 10m # ??? 30??? ??? 1????.
